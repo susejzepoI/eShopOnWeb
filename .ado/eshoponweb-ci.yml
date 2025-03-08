@@ -18,7 +18,7 @@ stages:
   jobs:
   - job: Build
     pool:
-      vmImage: eShopOnWebSelfPool
+      name: eShopOnWebSelfPool
       demands: Agent.Name -equals eShopOnWebSelfAgent
     steps:
     - task: DotNetCoreCLI@2
