@@ -18,7 +18,10 @@
 			]
 		}
 	},
-
+	//JLopez-20250510: Added Azure CLI to the dev container to use it in GitHub Codespaces.
+	"features": {
+		"ghcr.io/devcontainers/features/azure-cli:1": {}
+	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [5000, 5001],
 
