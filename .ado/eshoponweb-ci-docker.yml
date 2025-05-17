@@ -15,8 +15,9 @@ stages:
 - stage: Build
   jobs:
   - job: Build
-    pool:
-      vmImage: 'ubuntu-latest'
+    pool: 
+      name: eShopOnWebSelfPool
+      demands: Agent.Name -equals eShopOnWebSelfAgent
     steps:
     - task: AzureResourceManagerTemplateDeployment@3
       displayName: Deploy ACR using Bicep
