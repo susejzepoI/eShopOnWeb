@@ -9,7 +9,7 @@ variables:
   azureServiceConnection: 'azure subs'
   subscriptionId: '24c299fa-aec1-489b-8cf2-671209727540'
   resourceGroup: 'rg-eshoponweb-jlopez'
-  location: 'centralus'
+  location: 'West US'
 
 stages:
 - stage: Build
