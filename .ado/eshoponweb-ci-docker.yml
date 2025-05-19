@@ -3,7 +3,15 @@
 resources:
   repositories:
     - repository: self
-      trigger: none
+      trigger: 
+        branches:
+          exclude:
+            - '*'
+
+      pr:
+        branches:
+          include:
+            - main
 
 variables:
   azureServiceConnection: 'azure subs'
