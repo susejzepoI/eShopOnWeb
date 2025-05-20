@@ -57,7 +57,7 @@ stages:
         defaultContext: false
         context: $(Build.SourcesDirectory)
         includeLatestTag: true
-        imageName: eshoponweb/web:$(Build.BuildId)
+        imageName: eshoponweb/web-feature:$(Build.BuildId)
     - task: Docker@0
       displayName: 'Push the docker images'
       inputs:
